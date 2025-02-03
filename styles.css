@@ -4,14 +4,13 @@
     padding: 0;
 }
 
-
 body {
-    overflow: hidden; /* Prevent scrolling during animation */
-    font-family: 'Poppins', sans-serif; /* Use the font you selected */
- }
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
 
 .header {
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
     background-position: center;
@@ -30,22 +29,20 @@ body {
 }
 
 .logo-button {
-    display: flex; /* Align text and image */
-    align-items: center; /* Center vertically */
-    border: none; /* Remove border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px; /* Padding around the button */
-    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
     background: transparent;
     box-shadow: none;
-
 }
 
 .logo-image {
-    width: 1000px; /* Set width as needed */
-    height: 600px; /* Set height to match width for a square aspect ratio */
-    object-fit: contain; /* Ensure the image covers the entire area without distortion */
-
+    width: 1000px;
+    height: 600px;
+    object-fit: contain;
 }
 
 .new-page {
@@ -53,59 +50,59 @@ body {
     padding-top: 20px;
     width: 100%;
     height: 100%;
-    background-color: #ffffff; /* Initial background color for visibility */
-    transform: translateY(100%); /* Start off-screen */
+    background-color: #ffffff;
+    transform: translateY(100%);
     opacity: 0;
-    transition: transform 1s ease,background-color 1s ease; /* Animation duration and easing */
+    transition: transform 1s ease, background-color 1s ease;
 }
 
 .new-page.slide-up {
     opacity: 1;
-    transform: translateY(0); /* Slide up into view */
+    transform: translateY(0);
 }
 
-/* New class for changing background color after sliding up */
 .new-page.white-background {
-        background-color: #000000; /* Change to white after sliding up */
+    background-color: #000000;
 }
 
 h1 {
     color: white;
-    text-align: center; /* Centers the text */
-    width: 100%; /* Ensures full width */
-    margin-bottom: -10px; /* Adds spacing below the heading */
+    text-align: center;
+    width: 100%;
+    margin-bottom: -10px;
 }
+
 .button-container {
     display: flex;
-    justify-content: right; /* Centers buttons horizontally */
-    gap: 10px; /* Adds space between buttons */
-    margin-top: -65px; /* Adjust as needed */
+    justify-content: right;
+    gap: 10px;
+    margin-top: -65px;
     width: 100%;
 }
 
 .button-link {
-    display: inline-block; /* Make it behave like a button */
-    padding: 10px 20px; /* Padding inside the button */
-    margin: 10px; /* Space between buttons */
-    background-color: darkorange; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline from links */
-    cursor: pointer; /* Change cursor on hover */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .button-link:hover {
-    background-color: black; /* Darker shade on hover */
+    background-color: black;
 }
 
 .signup-container {
-    width: 300px; /* Set a fixed width */
-    margin: 50px auto; /* Center the container */
-    padding: 20px; /* Padding inside the container */
-    border: 1px solid #ccc; /* Border around the container */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background color */
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 h2 {
@@ -116,76 +113,78 @@ h2 {
     text-align: right;
     margin-bottom: -15px;
 }
+
 label {
-    display: block; /* Make labels block elements */
-    margin-bottom: 5px; /* Space below labels */
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    margin-bottom: 15px; /* Space below inputs */
-    border: 1px solid #ccc; /* Border around inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 input[type="submit"] {
-    width: 100%; /* Full width button */
-    padding: 10px; /* Padding inside button */
-    background-color: #428bca; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners for button */
-    cursor: pointer; /* Change cursor on hover */
+    width: 100%;
+    padding: 10px;
+    background-color: #428bca;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #357ab8; /* Darker shade on hover */
+    background-color: #357ab8;
 }
 
 p {
     color: white;
-    text-align: center; /* Center paragraph text */
+    text-align: center;
 }
 
 .logo-container {
     position: absolute;
-    top: -100px; /* Adjust as needed */
-    left: -140px; /* Adjust as needed */
-    width: 500px; /* Adjust based on your logo size */
+    top: -100px;
+    left: -140px;
+    width: 500px;
 }
 
 .logo {
-    width: 100%; /* Ensures it scales properly */
+    width: 100%;
     height: auto;
 }
-/* styles.css */
+
 .loading-screen {
-    position: fixed; /* Cover the entire viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.6);
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    z-index: 1000; /* Ensure it's on top of other elements */
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .loader {
-    font-size: 24px; /* Style for loading text */
+    font-size: 24px;
 }
 
 .hidden {
-    display: none; /* Hide the loading screen by default */
+    display: none;
 }
 
 .loading-screen.visible {
-    display: flex; /* Show the loading screen */
-    opacity: 1; /* Fade in */
+    display: flex;
+    opacity: 1;
 }
+
